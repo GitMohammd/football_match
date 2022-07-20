@@ -1,0 +1,86 @@
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+:root {
+  --textColor: rgb(253, 245, 236);
+  --backgraoundColor: rgb(43, 39, 39);
+}
+
+/* ------------------- styling head area --------------- */
+.head_area {
+  background-color: var(--backgraoundColor);
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  height: 600px;
+}
+.text-site {
+  width: 40%;
+  margin-left: 60px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 40px;
+}
+.text-site h1 {
+  font-size: 65px;
+  color: var(--textColor);
+}
+.text-site p {
+  color: var(--textColor);
+}
+.text-site button {
+  background-color: rgb(226, 144, 43);
+  width: 210px;
+  height: 60px;
+  border-radius: 9px;
+  font-size: 22px;
+  cursor: pointer;
+}
+.img-site {
+  /* margin-left: auto;
+ margin-right: auto; */
+
+  margin: 0 auto;
+}
+.img-site img {
+  width: 570px;
+  top: 0;
+}
+
+/* ------------------ styling main area ----------------- */
+
+.main-area {
+  display: flex;
+}
+
+.allMatchManuButton {
+  background-color: var(--backgraoundColor);
+  height: 250px;
+  width: 300px;
+  border-radius: 29px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.matchManuButton {
+  width: 250px;
+  height: 50px;
+  background-color: rgb(252, 229, 199);
+  border-radius: 10px;
+  border: 0.5px solid purple;
+
+}
+.matchManuButton a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.matchManuButton:hover {
+  background-color: rgb(218, 181, 253);
+}
