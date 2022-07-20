@@ -37,6 +37,12 @@ body {
   font-size: 22px;
   cursor: pointer;
 }
+
+.arrowIcon {
+  color: black;
+  margin-left: 15px;
+}
+
 .img-site {
   /* margin-left: auto;
  margin-right: auto; */
@@ -52,12 +58,14 @@ body {
 
 .main-area {
   display: flex;
+  gap: 20px;
 }
+
 
 .allMatchManuButton {
   background-color: var(--backgraoundColor);
   height: 250px;
-  width: 300px;
+  width: 380px;
   border-radius: 29px;
   display: flex;
   flex-direction: column;
@@ -66,13 +74,19 @@ body {
   gap: 20px;
 }
 
+.matchLiveCardAreas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  width: 820px;
+}
+
 .matchManuButton {
   width: 250px;
   height: 50px;
   background-color: rgb(252, 229, 199);
   border-radius: 10px;
   border: 0.5px solid purple;
-
 }
 .matchManuButton a {
   text-decoration: none;
@@ -83,4 +97,42 @@ body {
 
 .matchManuButton:hover {
   background-color: rgb(224, 198, 248);
+}
+
+/*------------------- start styling matchCard section ---------------- */
+
+.cardItem {
+  border-radius: 8px;
+  height: 310px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.cardButton {
+  width: 80px;
+  background-color: antiquewhite;
+  height: 30px;
+  border: none;
+  border: 1px solid purple;
+  border-radius: 5px;
+  margin-left: 8px;
+}
+.cardButton a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+} 
+
+.cardP {
+  margin: 10px;
+  font-weight: bold;
+}
+.cardIconSection {
+  margin-left: 10px;
+}
+
+.icon {
+  margin-left: 10px;
 }
