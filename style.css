@@ -136,3 +136,39 @@ body {
 .icon {
   margin-left: 10px;
 }
+
+/* ---------start styling footer section ----------- */
+
+.footer{
+  background-color: var(--backgraoundColor);
+  border-radius: 10px;
+  height: 300px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.footerH1{
+  text-align: center;
+  color: var(--textColor);
+}
+
+.hr {
+  color: aliceblue;
+  width: 800px;
+}
+.footerFeatures {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.footerFeatures a {
+   color: antiquewhite;
+  text-decoration: none;
+}
