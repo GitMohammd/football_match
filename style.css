@@ -1,5 +1,6 @@
 body {
   max-width: 1200px;
+  min-width: 600px;
   margin: 0 auto;
 }
 :root {
@@ -36,6 +37,30 @@ body {
   border-radius: 9px;
   font-size: 22px;
   cursor: pointer;
+  transition: all 0.5s;
+}
+.text-site button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.text-site button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.text-site button:hover span {
+  padding-right: 25px;
+}
+
+.text-site button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 .arrowIcon {
@@ -50,9 +75,20 @@ body {
   margin: 0 auto;
 }
 .img-site img {
-  width: 570px;
+  width: auto;
   top: 0;
 }
+
+/* -----------start responsive header --------------- */
+
+@media only screen and (max-width: 992px) {
+  .head_area {
+    flex-direction: column;
+    height: 100%;
+    width: 754px;
+  }
+}
+
 
 /* ------------------ styling main area ----------------- */
 
@@ -60,7 +96,6 @@ body {
   display: flex;
   gap: 20px;
 }
-
 
 .allMatchManuButton {
   background-color: var(--backgraoundColor);
@@ -99,6 +134,31 @@ body {
   background-color: rgb(224, 198, 248);
 }
 
+/*  ------------------start responsive main area -------------------- */
+@media only screen and (max-width: 992px) {
+  .main-area {
+    flex-direction: column;
+  }
+  .allMatchManuButton{
+    /* margin: 0 auto; */
+  }
+  .matchLiveCardAreas{
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 590x;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .matchLiveCardAreas{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+
 /*------------------- start styling matchCard section ---------------- */
 
 .cardItem {
@@ -135,7 +195,7 @@ body {
   text-decoration: none;
   color: black;
   font-size: 15px;
-} 
+}
 
 .cardP {
   margin: 10px;
@@ -150,28 +210,34 @@ body {
 }
 .cardtimeSection {
   text-align: center;
-  
 }
 
 .icon {
   margin-left: 10px;
 }
 
+/* --------------- responsive card area ------------------ */
+@media only screen and (max-width: 992px) {
+  .cardItem{
+    /* width: 200px; */
+  }
+}
+
 /* ---------start styling footer section ----------- */
 
-.footer{
+.footer {
   background-color: var(--backgraoundColor);
   border-radius: 10px;
   height: 300px;
   margin-top: 80px;
+  width: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
-.footerH1{
+.footerH1 {
   text-align: center;
   color: var(--textColor);
 }
@@ -189,19 +255,17 @@ body {
   gap: 50px;
 }
 .footerFeatures a {
-   color: antiquewhite;
+  color: antiquewhite;
   text-decoration: none;
 }
 
-
 /*  ---- responsiveness start here --------- */
 
-@media only screen and (max-width: 768px) {
-  .head_area{
-    flex-direction: column;
-    height: 100%;
-  } 
-  .bannarImg{
-    width: 00px;
+@media only screen and (max-width: 992px) {
+  .footer {
+    width: 754px;
+  }
+  .hr{
+    width: 740px;
   }
 }
